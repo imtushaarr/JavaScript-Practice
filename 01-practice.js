@@ -17,4 +17,4 @@ var str = word.split(" ").map(function(e){
     return e.split("").reverse().join("")
 })
 
-console.log(str.join(" "))
+console.log(str.join(" "));
