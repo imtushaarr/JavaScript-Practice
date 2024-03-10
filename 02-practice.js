@@ -7,7 +7,7 @@
 
 function checkArray(e){
     return Array.isArray(e);
-    // console.log(Array.isArray(e)); 
+    // console.log(Array.isArray(e))
 }
 
 console.log(checkArray([]));
