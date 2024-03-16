@@ -1,14 +1,10 @@
-let dataOne = {
-    name: 'tushar',
-    uid: '21bcs6751',
-    university: 'gu'
+function university(shortname, year, student){
+    this.shortname = shortname,
+    this.year = year,
+    this.student = student
 }
 
-let dataTwo = {
-    name: 'tushar',
-    uid: '21bcs6751',
-    university: 'cu'
-}
 
-dataOne = dataTwo.university
-console.log(dataOne);
+const university1 = new university('cu', 2001, 85000)
+
+console.log(university1.shortname)
