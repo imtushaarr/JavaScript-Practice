@@ -1,15 +1,18 @@
-// function university(shortname, year, student){
-//     this.shortname = shortname,
-//     this.year = year,
-//     this.student = student
-// }
+const one = '';
+const two = 4;
 
+// Function to prompt user for input
+var input = function() {
+    return Number(prompt(`Enter the number ${one}`));
+};
 
-// const university1 = new university('cu', 2001, 85000)
+// Call the input function to get user input
+var userInput = input();
 
-// console.log(university1.shortname)
-
-
-
-const muNam = '_tushar'
-console.log('nuNam');
+if (userInput < two) {
+    console.log(`${two} is greater than ${userInput}`);
+} else if (userInput > two) {
+    console.log(`${userInput} is less than ${two}`);
+} else {
+    console.log(`${userInput} and ${two} are equal.`);
+}
