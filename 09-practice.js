@@ -20,3 +20,15 @@ if(userInputOne < userInputTwo){
 } else{
     console.log(`${userInputOne} both are equal ${userInputTwo}`)
 }
+
+
+// const a = " ";
+// const b = 23;
+
+
+// var input = function(){
+//     return (prompt(`enter the value of a: ${a}`)) + b;
+// }
+
+
+// console.log(input())
