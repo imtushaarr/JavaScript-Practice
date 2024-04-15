@@ -1,2 +1,2 @@
 # JavaScript-Practice
-Just Question of JavaScript For Practice.
+JavaScript Problem Solving Practice.
