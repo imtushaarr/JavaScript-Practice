@@ -36,3 +36,6 @@ try{
 } catch(error){
     console.error(error.message);
 }
+
+
+// https://leetcode.com/problems/to-be-or-not-to-be/submissions/1232914679?envType=study-plan-v2&envId=30-days-of-javascript
