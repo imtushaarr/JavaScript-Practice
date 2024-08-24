@@ -1,7 +1,7 @@
 // const userInput = prompt("Enter your number:");
 // const userNumber = Number(userInput);
 
-const userNumber = 16
+const userNumber = "16"
 
 const findFactorialValue = (num) => {
   if (Number.isInteger(num) && num >= 0) {
@@ -11,7 +11,7 @@ const findFactorialValue = (num) => {
     }
     return result;
   } else {
-    return "Enter a valid non-negative integer!"; 
+    return `${typeof userNumber} ${userNumber} is not a valid number`; 
   }
 }
 
