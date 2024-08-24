@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Calculator</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Factorial Calculator</h1>
+        <form action="factorial.php" method="post">
+            <label for="number">Enter a number:</label>
+            <input type="number" name="number" id="number" required>
+            <button type="submit" id="submit">Calculate</button>
+            <div class="span">
+                <span class="innerText"></span>
+            </div>
+        </form>
+    </div>
+
+
+
+    <style>
+        body{
+            background-color: bisque;
+            box-sizing: border-box;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        #container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        #container h1{
+            font-size: 110px;
+        }
+        #container form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        #container form label{
+            font-size: 15px;
+            color: rgb(92, 92, 92);
+        }
+        #container form input{
+            width: 400px;
+            height: 20px;
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 50px;
+        }
+        #submit{
+            width: 420px;
+            height: 40px;
+            border: none;
+            outline: none;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            font-size: 20px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .span{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .innerText{
+            font-size: 30px;
+            color: rgb(155, 3, 3);
+        }
+    </style>
+</body>
+<script>
+    const form = document.querySelector('form');
+    const innerText = document.querySelector('.innerText');
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const numberInput = document.querySelector('#number').value;
+        const userNumber = Number(numberInput);
+
+        const findFactorialValue = (num) => {
+            if (Number.isInteger(num) && num >= 0) {
+                let result = 1;
+                for (let i = 1; i <= num; i++) {
+                    result *= i;
+                }
+                return result;
+            }
+        };
+
+        const result = findFactorialValue(userNumber);
+        innerText.textContent = result;
+    });
+</script>
+</html>
