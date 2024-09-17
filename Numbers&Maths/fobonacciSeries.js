@@ -14,4 +14,4 @@ function fobonacciSeries(input){
 }
 
 
-console.log(fobonacciSeries(input))
+console.log(fobonacciSeries(input));
