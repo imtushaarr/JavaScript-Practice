@@ -15,4 +15,4 @@ function numberToBinary(num){
     return binary.reverse().join('');
 }
 
-console.log(numberToBinary(num))
+console.log(numberToBinary(num));
