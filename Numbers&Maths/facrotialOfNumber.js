@@ -15,4 +15,4 @@ function facrotialOfNumber(num){
     return result;
 }
 
-console.log(facrotialOfNumber(num))
+console.log(facrotialOfNumber(num));
