@@ -23,4 +23,4 @@ function maximumpProductTwoElements(num){
     return max1 * max2
     
 }
-console.log(maximumpProductTwoElements(num))
+console.log(maximumpProductTwoElements(num));
