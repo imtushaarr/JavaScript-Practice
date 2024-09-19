@@ -18,5 +18,5 @@ while(Math.abs(guess * guess - num)>epsilion){
 return guess;
 }
 
-console.log(squareRootOfNumber(num))
+console.log(squareRootOfNumber(num));
 
