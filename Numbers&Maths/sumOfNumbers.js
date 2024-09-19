@@ -1,7 +1,7 @@
 // Sum of Digits
 // Write a function that takes a number as input and returns the sum of its digits.
 
-const num = 123
+const num = 123;
 // Output: 6
 
 
